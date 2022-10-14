@@ -1,0 +1,135 @@
+@import "./reset";
+@import "variables";
+
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(113.49deg, #984D38 -30.3%, #181E41 58.12%);
+    font-family: "Poppins";
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: $white;
+    // height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header__inner {
+    margin-top: 20px;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.header__author {
+    display: flex;
+    align-items: center;
+}
+
+.header__author-profile {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(214.02deg, #EA5F5F 6.04%, #EEAA55 92.95%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__author-name {
+    margin-left: 5px;
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    * + * {
+        margin-left: 40px;
+    }
+}
+
+.header__contact-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    width: 122px;
+    height: 50px;
+    background: linear-gradient(214.02deg, #EA5F5F 6.04%, #EEAA55 92.95%);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.header__contact-me {
+    color: $white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+// About me
+
+.main__inner {
+    margin-top: 70px;
+}
+.main__about {
+    display: flex;
+}
+
+.main__about-section {
+}
+.main__about-intro {
+    max-width: 1220px;
+    height: 360px;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 120%;
+    
+}
+.main__about-text {
+    margin-top: 20px;
+    max-width: 489px;
+    height: 144px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 180%;
+}
+.main__about-image {
+    max-width: 487px;
+    height: 650px;
+}
+    
+.main__about-picture {
+    border-radius: 20%;
+}
+
+.main__about-side {
+    position: absolute;
+    width: 256px;
+    height:-50px;
+    right: 10px;
+    top: 450px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.585em;
+    color: rgba(255, 255, 255, 0.3);
+    transform: rotate(90deg);
+}
+// About me
