@@ -124,6 +124,13 @@ img {
   background: linear-gradient(214.02deg, #EA5F5F 6.04%, #EEAA55 92.95%);
   border-radius: 50px;
   cursor: pointer;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.header__contact-btn:hover {
+  -webkit-box-shadow: 0 0px 15px 0 rgba(252, 104, 110, 0.65);
+          box-shadow: 0 0px 15px 0 rgba(252, 104, 110, 0.65);
 }
 
 .header__contact-me {
@@ -183,5 +190,19 @@ img {
   color: rgba(255, 255, 255, 0.3);
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+
+.main__about-connect {
+  cursor: pointer;
+  margin-top: -50px;
+  font-size: 15px;
+  line-height: 180%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
 }
 /*# sourceMappingURL=style.css.map */
