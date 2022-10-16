@@ -12,6 +12,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
     <!-- // Google fonts -->
+
+    <!-- JQuery -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="./assets/js/tabs.js"></script>
+    <script>
+    $( function() {
+        $( "#tabs" ).tabs();
+    } );
+    </script>
+  
+    <!-- //JQuery -->
+
 </head>
 <body>
     <header class="header">
@@ -70,20 +85,151 @@
                     </div>
                     <div class="main__about-image">
                         <img class="main__about-picture" src="./assets/img/max.jpg" alt="" srcset="">
+                        <div class="main__about-cv">
+                            <button class="main__about-cv-btn">
+                                Show Resume
+                            </button>
+                        </div>
                     </div>
 
                     <div class="main__about-side">
                         Maxim
                     </div>
                 </div>
-                <!-- <div class="main__about-connect">
-                    <p class="main__about-connect-text">
-                        Let's talk
-                    </p>
-                    <img class="main__about-connect-arrow" src="./assets/img/icons/arrow-right.svg" alt="" srcset="">
-                </div> -->
+                <div class="main__about-connect">
+                    <a class="main__about-connect-link" href="https://www.linkedin.com/in/maxim-nosov-828894220/" target="_blank">
+                        <p class="main__about-connect-text">
+                            Let's talk
+                        </p>
+                        <img class="main__about-connect-arrow" src="./assets/img/icons/arrow-right.svg" alt="" srcset="">
+                    </a>
+                    </div>
             </div>
         </div>
+
+        <section class="skills">
+            <div class="container">
+                <div class="skills__inner">
+                    <h2 class="skills__title">My Skills</h2>
+
+                    <div id="tabs">
+                        <ul>
+                          <li class="tabs__item"><a href="#tabs-1"><img class="language-icon" src="./assets/img/browser.png" alt="" srcset=""> Languages</a></li>
+                          <li class="tabs__item"><a href="#tabs-2"><img class="language-icon" src="./assets/img/program.png" alt="" srcset="">Frameworks</a></li>
+                          <li class="tabs__item"><a href="#tabs-3"><img class="language-icon" src="./assets/img/database.png" alt="" srcset="">Databases</a></li>
+                          <li class="tabs__item"><a href="#tabs-4"><img class="language-icon" src="./assets/img/personal.png" alt="" srcset="">Developer skills</a></li>
+                          <li class="tabs__item"><a href="#tabs-5"><img class="language-icon" src="./assets/img/personal.png" alt="" srcset="">Personal skills</a></li>
+                        </ul>
+                        <div id="tabs-1">
+                            <div class="skills__cards">
+                                <div class="skills__card">
+                                    HTML
+                                </div>
+                                <div class="skills__card">
+                                    CSS
+                                </div>
+                                <div class="skills__card">
+                                    Javascript
+                                </div>
+                                <div class="skills__card">
+                                    PHP
+                                </div>
+                            </div>
+                        </div>  
+                        <div id="tabs-2">
+                            <div class="skills__cards">
+                                <div class="skills__card">
+                                    React JS
+                                </div>
+                                <div class="skills__card">
+                                    Express
+                                </div>
+                                <div class="skills__card">
+                                    ASP.NET
+                                </div>
+                                <div class="skills__card">
+                                    JQuery
+                                </div>
+                                <div class="skills__card">
+                                    SCSS
+                                </div>
+                                <div class="skills__card">
+                                    Bootstrap
+                                </div>
+                                <div class="skills__card">
+                                    Talwind CSS
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabs-3">
+                            <div class="skills__cards">
+                                <div class="skills__card">
+                                    SQL
+                                </div>
+                                <div class="skills__card">
+                                    MongoDB
+                                </div>
+                                <div class="skills__card">
+                                    PostgreSQL
+                                </div>
+                                <div class="skills__card">
+                                    Firebase
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabs-4">
+                            <div class="skills__cards">
+                                <div class="skills__card">
+                                    Git
+                                </div>
+                                <div class="skills__card">
+                                    GitHub
+                                </div>
+                                <div class="skills__card">
+                                    GitLab
+                                </div>
+                                <div class="skills__card">
+                                    JSON
+                                </div>
+                                <div class="skills__card">
+                                    Responsive Design
+                                </div>
+                                <div class="skills__card">
+                                    Browser Developer Tools
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabs-5">
+                            <div class="skills__cards">
+                                <div class="skills__card">
+                                    Excellent communication
+                                </div>
+                                <div class="skills__card">
+                                    Problem-solving
+                                </div>
+                                <div class="skills__card">
+                                    PostgreSQL
+                                </div>
+                                <div class="skills__card">
+                                    Firebase
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+
+                    <!-- <div class="projects__cards">
+                        <div class="projects__card">
+                            <img class="projects__card-img" src="./assets/img/prj1.png" alt="" srcset="">
+                            <img class="projects__card-github" src="./assets/img/GitHub-Mark-32px.png" alt="" srcset="">
+                        </div>
+                    </div> -->
+                </div>
+
+            </div>
+        </section>
     </main>
+
+
 </body>
 </html>

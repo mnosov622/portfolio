@@ -147,6 +147,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 590px;
 }
 
 .main__about-intro {
@@ -169,6 +170,22 @@ img {
 .main__about-image {
   max-width: 487px;
   height: 650px;
+}
+
+.main__about-cv {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.main__about-cv-btn {
+  padding: 10px 20px;
+  width: 182px;
+  height: 50px;
+  background: linear-gradient(214.02deg, #EA5F5F 6.04%, #EEAA55 92.95%);
+  border-radius: 50px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
 }
 
 .main__about-picture {
@@ -204,5 +221,183 @@ img {
       -ms-flex-align: center;
           align-items: center;
   width: 100px;
+}
+
+.main__about-connect-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__about-connect-link:hover .main__about-connect-arrow {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+.main__about-connect-text {
+  background: linear-gradient(214.02deg, #EA5F5F 6.04%, #EEAA55 92.95%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.main__about-connect-arrow {
+  margin-left: 10px;
+  -webkit-transition: -webkit-transform .3s ease-in;
+  transition: -webkit-transform .3s ease-in;
+  transition: transform .3s ease-in;
+  transition: transform .3s ease-in, -webkit-transform .3s ease-in;
+}
+
+.author_resume {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 500px;
+}
+
+.skills__inner {
+  margin-top: 100px;
+}
+
+.skills__title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.skills__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.skills__cards * + * {
+  margin-left: 20px;
+}
+
+.skills__card {
+  cursor: pointer;
+  padding: 30px;
+  height: 60px;
+  background: linear-gradient(214.02deg, #EA5F5F 6.04%, #EEAA55 92.95%);
+  -webkit-box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Poppins";
+}
+
+.language-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+#tabs li.active {
+  background: linear-gradient(214.02deg, #EA5F5F 6.04%, #EEAA55 92.95%);
+  -webkit-box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+#tabs-1, #tabs-2, #tabs-3, #tabs-4, #tabs-5 {
+  color: #fff;
+}
+
+#tabs a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tabs__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#tabs ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#tabs li {
+  color: #fff;
+  font-family: "Poppins";
+  border: none;
+}
+
+ul.tabs li a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  font-size: 1.2em;
+  border: 1px solid #fff;
+  outline: none;
+  -webkit-border-top-left-radius: 8px;
+  -webkit-border-top-right-radius: 8px;
+  -moz-border-radius-topleft: 8px;
+  -moz-border-radius-topright: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 0 20px;
+}
+
+.ui-tabs .ui-tabs-nav {
+  padding: 8px !important;
+}
+
+ul.tabs li a:hover {
+  background: #ccc;
+}
+
+html ul.tabs li.active, html ul.tabs li.active a:hover {
+  background: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.tabContainer {
+  border: 1px solid #999;
+  overflow: hidden;
+  clear: both;
+  float: left;
+  width: 100%;
+  background: #fff;
+  -webkit-border-radius: 8px;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius: 8px;
+  -moz-border-radius-topleft: 0;
+  border-radius: 8px;
+  border-top-left-radius: 0;
+}
+
+.tabContent {
+  font-size: 16px;
+  padding: 20px;
+}
+
+.colorz {
+  background: #ff6600 !important;
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
