@@ -62,6 +62,49 @@ img {
     }
 }
 
+.header__menu-item {
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left:2px;
+        width: 10px;
+        height: 2px;
+        background-color: #EEAA55;
+        visibility: hidden;
+        transition: all .2s ease-in;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right:2px;
+        width: 10px;
+        height: 2px;
+        background-color: #EEAA55;
+        visibility: hidden;
+        transition: all .2s ease-in;
+    }
+
+    &:hover::before{
+        color: #EEAA55;
+        visibility: visible;
+        width: 50%;
+    }
+
+    &:hover::after{
+        color: #EEAA55;
+        visibility: visible;
+        width: 50%;
+    }
+
+    // &:hover {
+    //     padding-bottom: 2px;
+    // }
+
+}
+
 .header__contact-btn {
     display: flex;
     flex-direction: row;
@@ -198,13 +241,14 @@ img {
 
 .skills__title {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .skills__cards {
     display: flex;
+    flex-wrap: wrap;
     * + * {
-        margin-left: 20px;
+         margin-left: 20px;
     }
 }
 
@@ -221,6 +265,7 @@ img {
     align-items: center;
     justify-content: center;
     font-family: "Poppins";
+
 }
 
 .language-icon {
@@ -236,6 +281,8 @@ img {
 
 #tabs-1, #tabs-2, #tabs-3, #tabs-4, #tabs-5 {
     color: #fff;
+    display: flex;
+    justify-content: center;
     // margin: 0 auto;
 }
 
@@ -250,15 +297,6 @@ img {
     display: flex;
     align-items: center;
 }
-// ul.tabs {
-//     float:left;
-//     list-style:none;
-//     height:32px;    
-//     width:100%;
-//     border-radius:8px 0 -50px 0;
-//     margin:0;
-//     padding:0;
-// }
     #tabs ul {
         display: flex;
         justify-content: space-between;
@@ -269,58 +307,9 @@ img {
         border: none;
     }
      
-    ul.tabs li a {
-    text-decoration:none;
-    color:#000;
-    display:block;
-    font-size:1.2em;
-    border:1px solid #fff;
-    outline:none;
-    -webkit-border-top-left-radius:8px;
-    -webkit-border-top-right-radius:8px;
-    -moz-border-radius-topleft:8px;
-    -moz-border-radius-topright:8px;
-    border-top-left-radius:8px;
-    border-top-right-radius:8px;
-    padding:0 20px;
-    }
-     
     .ui-tabs .ui-tabs-nav {
         padding: 8px !important;
     }
-
-    ul.tabs li a:hover {
-    background:#ccc;
-    }
-     
-    html ul.tabs li.active,html ul.tabs li.active a:hover {
-    background:#fff;
-    border-bottom:1px solid #fff;
-    }
-     
-    .tabContainer {
-    border:1px solid #999;
-    overflow:hidden;
-    clear:both;
-    float:left;
-    width:100%;
-    background:#fff;
-    -webkit-border-radius:8px;
-    -webkit-border-top-left-radius:0;
-    -moz-border-radius:8px;
-    -moz-border-radius-topleft:0;
-    border-radius:8px;
-    border-top-left-radius:0;
-    }
-     
-    .tabContent {
-    font-size: 16px;
-    padding:20px;
-    }
-.colorz{
-    background: #ff6600 !important;
-    color:#ffffff;
-}
 
 // .projects__cards {
 //     margin-top: 40px;
@@ -362,7 +351,63 @@ img {
 // }
 
 
+//Portfolio
 
+.portfolio__inner {
+    margin: 150px 0;
+}
+.portfolio__title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.portfolio__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    * + * {
+        margin-left: 20px;
+    }
+}
+
+.portfolio__card {
+    width:40%;
+    border-radius: 30px;
+    transition: filter .2s ease-in;
+    cursor: pointer;
+    margin-bottom: 20px;
+    &:hover {
+        filter: brightness(70%);
+    }
+    &:hover .portfolio__card-link {
+        visibility: visible;
+        opacity: 1;
+        bottom: 30px;
+    }
+}
+
+.portfolio__card-img {
+    // width: 30%;
+    border-radius: 50px;
+    position: relative;
+    width: 800px;
+    height: 300px;
+}
+
+.portfolio__card-link {
+    visibility: hidden;
+    opacity: 0;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: -10px;
+    left:50%;
+    transform: translateX(-50%);
+    transition: all .3s ease-in;
+}
+
+//Portfolio
 
 
 

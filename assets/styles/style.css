@@ -104,6 +104,48 @@ img {
   margin-left: 40px;
 }
 
+.header__menu-item {
+  position: relative;
+}
+
+.header__menu-item::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 2px;
+  width: 10px;
+  height: 2px;
+  background-color: #EEAA55;
+  visibility: hidden;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.header__menu-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 2px;
+  width: 10px;
+  height: 2px;
+  background-color: #EEAA55;
+  visibility: hidden;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.header__menu-item:hover::before {
+  color: #EEAA55;
+  visibility: visible;
+  width: 50%;
+}
+
+.header__menu-item:hover::after {
+  color: #EEAA55;
+  visibility: visible;
+  width: 50%;
+}
+
 .header__contact-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -262,13 +304,15 @@ img {
 
 .skills__title {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .skills__cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .skills__cards * + * {
@@ -309,6 +353,12 @@ img {
 
 #tabs-1, #tabs-2, #tabs-3, #tabs-4, #tabs-5 {
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #tabs a {
@@ -347,57 +397,75 @@ img {
   border: none;
 }
 
-ul.tabs li a {
-  text-decoration: none;
-  color: #000;
-  display: block;
-  font-size: 1.2em;
-  border: 1px solid #fff;
-  outline: none;
-  -webkit-border-top-left-radius: 8px;
-  -webkit-border-top-right-radius: 8px;
-  -moz-border-radius-topleft: 8px;
-  -moz-border-radius-topright: 8px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  padding: 0 20px;
-}
-
 .ui-tabs .ui-tabs-nav {
   padding: 8px !important;
 }
 
-ul.tabs li a:hover {
-  background: #ccc;
+.portfolio__inner {
+  margin: 150px 0;
 }
 
-html ul.tabs li.active, html ul.tabs li.active a:hover {
-  background: #fff;
-  border-bottom: 1px solid #fff;
+.portfolio__title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 
-.tabContainer {
-  border: 1px solid #999;
-  overflow: hidden;
-  clear: both;
-  float: left;
-  width: 100%;
-  background: #fff;
-  -webkit-border-radius: 8px;
-  -webkit-border-top-left-radius: 0;
-  -moz-border-radius: 8px;
-  -moz-border-radius-topleft: 0;
-  border-radius: 8px;
-  border-top-left-radius: 0;
+.portfolio__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.tabContent {
-  font-size: 16px;
-  padding: 20px;
+.portfolio__cards * + * {
+  margin-left: 20px;
 }
 
-.colorz {
-  background: #ff6600 !important;
-  color: #ffffff;
+.portfolio__card {
+  width: 40%;
+  border-radius: 30px;
+  -webkit-transition: -webkit-filter .2s ease-in;
+  transition: -webkit-filter .2s ease-in;
+  transition: filter .2s ease-in;
+  transition: filter .2s ease-in, -webkit-filter .2s ease-in;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.portfolio__card:hover {
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
+}
+
+.portfolio__card:hover .portfolio__card-link {
+  visibility: visible;
+  opacity: 1;
+  bottom: 30px;
+}
+
+.portfolio__card-img {
+  border-radius: 50px;
+  position: relative;
+  width: 800px;
+  height: 300px;
+}
+
+.portfolio__card-link {
+  visibility: hidden;
+  opacity: 0;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
 }
 /*# sourceMappingURL=style.css.map */
