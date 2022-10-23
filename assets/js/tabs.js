@@ -1,3 +1,7 @@
+$( function() {
+    $( "#tabs" ).tabs();
+} );
+
 $(document).ready(function() {
     console.log("ready");
     //hiding tab content except first one

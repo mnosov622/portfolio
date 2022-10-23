@@ -1,6 +1,10 @@
 @import "./reset";
 @import "variables";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: rgb(2,0,36);
     background: linear-gradient(113.49deg, #984D38 -30.3%, #181E41 58.12%);
@@ -14,6 +18,7 @@ body {
     // height: 100vh;
 }
 
+
 img {
     max-width: 100%;
     object-fit: cover;
@@ -22,6 +27,12 @@ img {
 
 .container {
     max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-sm {
+    max-width: 577px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -39,7 +50,7 @@ img {
     align-items: center;
 }
 
-.header__author-profile {
+.logo {
     width: 40px;
     height: 40px;
     background: linear-gradient(214.02deg, #EA5F5F 6.04%, #EEAA55 92.95%);
@@ -118,16 +129,66 @@ img {
     cursor: pointer;
     transition: all .2s ease-in;
     &:hover {
-        // background: linear-gradient(213#fc6076, #ff9a44, #ef9d43, #e75516);
         box-shadow: 0 0px 15px 0 rgba(252, 104, 110, 0.65);
 }
+}
+
+.header__contacts {
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transition: all .3s ease-in;
+}
+
+.header__contacts-content {
+    position: absolute;
+    top: -50px;
+    width: 30%;
+    height: 30%;
+    background-color: $white;
+    color: #181E41;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: all .3s ease-in;
+}
+
+.close-icon {
+    cursor: pointer;
+    position: absolute;
+    right:20px;
+    top:20px;
+    width: 20px;
+    height: 20px;
+    transition: all .3s ease-in;
+    &:hover {
+        transform: scale(1.085);
+    }
+}
+
+.open-contacts-content {
+    display: flex;
+    top:35%;
+}
+
+.open-contacts {
+    visibility: visible;
+    display: flex;
 }
 
 .header__contact-me {
     color: $white;
     font-size: 20px;
     cursor: pointer;
-    
 }
 
 // About me
@@ -213,8 +274,6 @@ img {
 }
 
 .main__about-connect-text {
-    // color: #EEAA55;
-    // color: 
         background: linear-gradient(214.02deg, #EA5F5F 6.04%, #EEAA55 92.95%);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
@@ -242,6 +301,7 @@ img {
 .skills__title {
     text-align: center;
     margin-bottom: 30px;
+    font-size: 40px;
 }
 
 .skills__cards {
@@ -265,7 +325,11 @@ img {
     align-items: center;
     justify-content: center;
     font-family: "Poppins";
-
+    transition: all .3s ease-in;
+    &:hover {
+        transform: scale(1.025) translateY(-1px);
+        box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.35);
+    }
 }
 
 .language-icon {
@@ -305,6 +369,7 @@ img {
         color: #fff;
         font-family: "Poppins";
         border: none;
+        transition: all .15s ease-in;
     }
      
     .ui-tabs .ui-tabs-nav {
@@ -358,8 +423,8 @@ img {
 }
 .portfolio__title {
     text-align: center;
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size: 40px;
+    margin-bottom: 50px;
 }
 
 .portfolio__cards {
@@ -367,8 +432,8 @@ img {
     justify-content: center;
     flex-wrap: wrap;
     * + * {
-        margin-left: 20px;
-    }
+        margin-left: 40px;
+    } 
 }
 
 .portfolio__card {
@@ -383,7 +448,11 @@ img {
     &:hover .portfolio__card-link {
         visibility: visible;
         opacity: 1;
+        position: absolute;
         bottom: 30px;
+    }
+    &:nth-child(odd) {
+        margin-left: 0;
     }
 }
 
@@ -402,7 +471,7 @@ img {
     height: 40px;
     position: absolute;
     bottom: -10px;
-    left:50%;
+    left:45%;
     transform: translateX(-50%);
     transition: all .3s ease-in;
 }
@@ -410,29 +479,73 @@ img {
 //Portfolio
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Footer
+
+.footer {
+
+}
+
+.footer__inner {
+    text-align: center;
+}
+
+.footer__logo {
+    margin: 0 auto;
+}
+
+.footer__title {
+    margin: 20px 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 75px;
+    letter-spacing: 0.3px;
+}
+
+.footer__descr {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 180%;
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 40px;
+}
+
+.footer__socials {
+    max-width: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.github {
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    transform: translate(15%, 10%);
+}
+
+.instagram {
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    transform: translate(22%, 22%);
+}
+
+.footer__copyright {
+    margin-top: 50px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 180%;
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
 // Footer
