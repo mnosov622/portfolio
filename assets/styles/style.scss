@@ -185,6 +185,15 @@ img {
     display: flex;
 }
 
+.close-contacts-content {
+    top: -50px;
+    opacity: 0;
+}
+
+.close-contacts {
+    visibility: hidden;
+}
+
 .header__contact-me {
     color: $white;
     font-size: 20px;

@@ -22,13 +22,23 @@ const contacts = document.querySelector(".header__contacts");
 const closeIcon = document.querySelector(".close-icon");
 
 contactMeBtn.addEventListener("click", () => {
+    contacts.classList.remove("close-contacts");
+    contactsContent.classList.remove("close-contacts-content");
     contactsContent.classList.add("open-contacts-content");
     contacts.classList.add("open-contacts");
+    document.body.style.overflow = "hidden";
 })
-
 
 closeIcon.addEventListener("click", () => {
-    contactsContent.classList.remove("open-contacts-content");
-    contacts.classList.remove("open-contacts");
+    contacts.classList.add("close-contacts");
+    contactsContent.classList.add("close-contacts-content");
+    document.body.style.overflow = "unset";
 })
 
+document.addEventListener("click", (e) => {
+    if(e.target === contacts) {
+        contacts.classList.add("close-contacts");
+        contactsContent.classList.add("close-contacts-content");
+        document.body.style.overflow = "unset";
+    }
+})
