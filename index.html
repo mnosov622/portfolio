@@ -1,324 +1,503 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/style.css" />
     <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- // Google fonts -->
-    
-    <!-- JQuery -->
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <script src="./assets/js/tabs.js"></script>
-    <!-- //JQuery -->
-    
-    <script src="./assets/js/script.js" defer></script>
-</head>
-<body>
-    <header class="header">
-        <div class="container">
-            <div class="header__inner">
-                <div class="header__nav">
-                    <div class="header__author">
-                        <span class="header__author-profile logo">
-                            MN
-                        </span>
-                        <span class="header__author-name">Maxim Nosov</span>
-                    </div>
-                    <div class="header__menu">
-                        <ul class="header__menu">
-                            <a href="#about">
-                                <li class="header__menu-item">About</li>
-                            </a>
-                            <a href="#skills">
-                                <li class="header__menu-item">Skills</li>
-                            </a>
-                            <a href="#projects">
-                                <li class="header__menu-item">Projects</li>
-                            </a>
-                            <a href="#socials">
-                                <li class="header__menu-item">Socials</li>
-                            </a>
 
-                            <!-- <a href="">
+    <!-- JQuery -->
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+
+    <!-- //JQuery -->
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!--// AOS -->
+    <script src="./assets/js/script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__nav">
+            <div class="header__author">
+              <span class="header__author-profile logo"> MN </span>
+              <span class="header__author-name">Maxim Nosov</span>
+            </div>
+            <div class="header__menu">
+              <ul class="header__menu">
+                <a href="#skills">
+                  <li class="header__menu-item">Skills</li>
+                </a>
+                <a href="#projects">
+                  <li class="header__menu-item">Projects</li>
+                </a>
+                <a href="#certifications">
+                  <li class="header__menu-item">Certifications</li>
+                </a>
+
+                <a href="#socials">
+                  <li class="header__menu-item">Socials</li>
+                </a>
+
+                <!-- <a href="">
                                 <li class="header__menu-item">Connect with me</li>
                             </a> -->
-                        </ul>
-                    </div>
-                    
-                    <div class="header__contact-btn">
-                        <button class="header__contact-me">
-                            Contact
-                        </button>
-                    </div>
-                    <div class="header__contacts">
-                        <div class="header__contacts-content">
-                            <h4>Contact me via: </h4>
-                            <p>Email: mnosov622@gmail.com</p>
-
-                            <p>Phone: +1 (647) 989 9194</p>
-                            <div class="close-icon">
-                                <img src="./assets/img/close.png" alt="" srcset="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </ul>
             </div>
+
+            <div class="header__contact-btn">
+              <button class="header__contact-me">Contact</button>
+            </div>
+
+            <div class="header__burger-icon">
+              <img
+                class="burger-icon"
+                src="./assets/img/icons/burger.svg"
+                alt="burger icon"
+              />
+            </div>
+
+            <div class="header__contacts">
+              <div class="header__contacts-content">
+                <h4>Contact me via:</h4>
+                <p>Email: mnosov622@gmail.com</p>
+
+                <p>Phone: +1 (647) 989 9194</p>
+                <div class="close-icon">
+                  <img src="./assets/img/close.png" alt="" srcset="" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </header>
 
     <main class="main">
-        <div class="container">
-            <div class="main__inner">
-                <div class="main__about" id="about">
-                    <div class="main__about-section">
-                        <p class="main__about-intro">
-                            <!-- Maxim<br> -->
-                            User Interface<br>
-                            Front end developer
-                        </p>
-                        <p class="main__about-text">
-                            Creative front-end developer with more than 2 years of experience in enterprise companies and startups. Proficient in HTML, CSS(SCSS), Javascript and React. Passionate about UI/UX.
-                        </p>
-                    </div>
-                    <div class="main__about-image">
-                        <img class="main__about-picture" src="./assets/img/max.jpg" alt="" srcset="">
-                        <!-- <div class="main__about-cv">
+      <div class="container">
+        <div class="main__inner">
+          <div class="main__about" id="about">
+            <div class="main__about-section">
+              <p class="main__about-intro">
+                <!-- Maxim<br> -->
+                User Interface<br />
+                Front end developer
+              </p>
+              <p class="main__about-text">
+                Creative front-end developer with more than 2 years of
+                experience in enterprise companies and startups. Proficient in
+                HTML, CSS(SCSS), Javascript and React. Passionate about UI/UX.
+              </p>
+            </div>
+            <div class="main__about-image">
+              <img
+                class="main__about-picture"
+                src="./assets/img/max.jpg"
+                alt=""
+                srcset=""
+              />
+              <!-- <div class="main__about-cv">
                             <button class="main__about-cv-btn">
                                 Show Resume
                             </button>
                         </div> -->
-                    </div>
-
-                    <div class="main__about-side">
-                        Maxim
-                    </div>
-                </div>
-                <div class="main__about-connect">
-                    <a class="main__about-connect-link" href="https://www.linkedin.com/in/maxim-nosov-828894220/" target="_blank">
-                        <p class="main__about-connect-text">
-                            Let's talk
-                        </p>
-                        <img class="main__about-connect-arrow" src="./assets/img/icons/arrow-right.svg" alt="" srcset="">
-                    </a>
-                    </div>
             </div>
+
+            <!-- <div class="main__about-side">Maxim</div> -->
+          </div>
+          <div class="main__about-connect">
+            <a
+              class="main__about-connect-link"
+              href="https://www.linkedin.com/in/maxim-nosov-828894220/"
+              target="_blank"
+            >
+              <p class="main__about-connect-text">Let's talk</p>
+              <img
+                class="main__about-connect-arrow"
+                src="./assets/img/icons/arrow-right.svg"
+                alt=""
+                srcset=""
+              />
+            </a>
+          </div>
         </div>
+        <div class="mouse-icon">
+          <img src="./assets/img/icons/mouse.svg" alt="" />
+        </div>
+      </div>
 
-        <section class="skills" id="skills">
-            <div class="container">
-                <div class="skills__inner">
-                    <h2 class="skills__title">My Skills</h2>
+      <section
+        class="skills"
+        id="skills"
+        data-aos="fade-up"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="500"
+      >
+        <div class="container">
+          <div class="skills__inner">
+            <h2 class="skills__title">My Skills</h2>
 
-                    <div id="tabs">
-                        <ul>
-                          <li class="tabs__item"><a href="#tabs-1"><img class="language-icon" src="./assets/img/browser.png" alt="" srcset=""> Languages</a></li>
-                          <li class="tabs__item"><a href="#tabs-2"><img class="language-icon" src="./assets/img/program.png" alt="" srcset="">Frameworks</a></li>
-                          <li class="tabs__item"><a href="#tabs-3"><img class="language-icon" src="./assets/img/database.png" alt="" srcset="">Databases</a></li>
-                          <li class="tabs__item"><a href="#tabs-4"><img class="language-icon" src="./assets/img/coding.png" alt="" srcset="">Developer skills</a></li>
-                          <li class="tabs__item"><a href="#tabs-5"><img class="language-icon" src="./assets/img/bussiness-man.png" alt="" srcset="">Personal skills</a></li>
-                        </ul>
-                        <div id="tabs-1">
-                            <div class="skills__cards">
-                                <div class="skills__card">
-                                    HTML
-                                </div>
-                                <div class="skills__card">
-                                    CSS
-                                </div>
-                                <div class="skills__card">
-                                    Javascript
-                                </div>
-                                <div class="skills__card">
-                                    PHP
-                                </div>
-                            </div>
-                        </div>  
-                        <div id="tabs-2">
-                            <div class="skills__cards">
-                                <div class="skills__card">
-                                    React JS
-                                </div>
-                                <div class="skills__card">
-                                    Express
-                                </div>
-                                <div class="skills__card">
-                                    ASP.NET
-                                </div>
-                                <div class="skills__card">
-                                    JQuery
-                                </div>
-                                <div class="skills__card">
-                                    SCSS
-                                </div>
-                                <div class="skills__card">
-                                    Bootstrap
-                                </div>
-                                <div class="skills__card">
-                                    Talwind CSS
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tabs-3">
-                            <div class="skills__cards">
-                                <div class="skills__card">
-                                    SQL
-                                </div>
-                                <div class="skills__card">
-                                    MongoDB
-                                </div>
-                                <div class="skills__card">
-                                    PostgreSQL
-                                </div>
-                                <div class="skills__card">
-                                    Firebase
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tabs-4">
-                            <div class="skills__cards">
-                                <div class="skills__card">
-                                    Git
-                                </div>
-                                <div class="skills__card">
-                                    GitHub
-                                </div>
-                                <div class="skills__card">
-                                    GitLab
-                                </div>
-                                <div class="skills__card">
-                                    JSON
-                                </div>
-                                <div class="skills__card">
-                                    Responsive Design
-                                </div>
-                                <div class="skills__card">
-                                    Browser Developer Tools
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tabs-5">
-                            <div class="skills__cards">
-                                <div class="skills__card">
-                                    Excellent communication
-                                </div>
-                                <div class="skills__card">
-                                    Problem-solving
-                                </div>
-                                <div class="skills__card">
-                                    Time management
-                                </div>
-                                <div class="skills__card">
-                                    Proactive & Diligent
-                                </div>
-                            </div>
-                        </div>
-                      </div>
-
+            <div id="tabs">
+              <ul>
+                <li class="tabs__item">
+                  <a href="#tabs-1"
+                    ><img
+                      class="language-icon"
+                      src="./assets/img/browser.png"
+                      alt=""
+                      srcset=""
+                    />
+                    Languages</a
+                  >
+                </li>
+                <li class="tabs__item">
+                  <a href="#tabs-2"
+                    ><img
+                      class="language-icon"
+                      src="./assets/img/program.png"
+                      alt=""
+                      srcset=""
+                    />Frameworks</a
+                  >
+                </li>
+                <li class="tabs__item">
+                  <a href="#tabs-3"
+                    ><img
+                      class="language-icon"
+                      src="./assets/img/database.png"
+                      alt=""
+                      srcset=""
+                    />Databases</a
+                  >
+                </li>
+                <li class="tabs__item">
+                  <a href="#tabs-4"
+                    ><img
+                      class="language-icon"
+                      src="./assets/img/coding.png"
+                      alt=""
+                      srcset=""
+                    />Developer skills</a
+                  >
+                </li>
+                <li class="tabs__item">
+                  <a href="#tabs-5"
+                    ><img
+                      class="language-icon"
+                      src="./assets/img/bussiness-man.png"
+                      alt=""
+                      srcset=""
+                    />Personal skills</a
+                  >
+                </li>
+              </ul>
+              <div id="tabs-1">
+                <div class="skills__cards">
+                  <div class="skills__card">HTML</div>
+                  <div class="skills__card">CSS</div>
+                  <div class="skills__card">Javascript</div>
+                  <div class="skills__card">PHP</div>
                 </div>
-
-            </div>
-        </section>
-
-        <section class="portfolio" id="projects">
-            <div class="portfolio__inner">
-                <div class="container">
-                    <div class="portfolio__title">Projects</div>
-                        <div class="portfolio__cards">
-                            <div class="portfolio__card">
-                                    <a href="https://news-flash-phi.vercel.app/" target="_blank">
-                                        <img class="portfolio__card-img" src="./assets/img/prj1.png" alt="project image">
-                                        <img class="portfolio__card-link" src="./assets/img/external-link.png" alt="external-link">
-                                    </a>
-                                </div>
-
-                           
-                                <div class="portfolio__card">
-                                    <a href="http://masterhub.co/" target="_blank">
-                                        <img class="portfolio__card-img" src="./assets/img/prj2.png" alt="project image">
-                                        <img class="portfolio__card-link" src="./assets/img/external-link.png" alt="external-link">
-                                    </a>
-                                </div>
-
-                                <div class="portfolio__card">
-                                    <a href="http://spotify-project1.vercel.app/" target="_blank">
-                                        <img class="portfolio__card-img" src="./assets/img/prj3.png" alt="project image">
-                                        <img class="portfolio__card-link" src="./assets/img/external-link.png" alt="external-link">
-                                    </a>
-                                </div>
-                                <div class="portfolio__card">
-                                    <a href="https://mnosov622.github.io/cutspace-project/" target="_blank">
-                                        <img class="portfolio__card-img" src="./assets/img/prj4.png" alt="project image">
-                                        <img class="portfolio__card-link" src="./assets/img/external-link.png" alt="external-link">
-                                    </a>
-                                </div>
-                        </div>
+              </div>
+              <div id="tabs-2">
+                <div class="skills__cards">
+                  <div class="skills__card">React JS</div>
+                  <div class="skills__card">Express</div>
+                  <div class="skills__card">ASP.NET</div>
+                  <div class="skills__card">JQuery</div>
+                  <div class="skills__card">SCSS</div>
+                  <div class="skills__card">Bootstrap</div>
+                  <div class="skills__card">Talwind CSS</div>
                 </div>
+              </div>
+              <div id="tabs-3">
+                <div class="skills__cards">
+                  <div class="skills__card">SQL</div>
+                  <div class="skills__card">MongoDB</div>
+                  <div class="skills__card">PostgreSQL</div>
+                  <div class="skills__card">Firebase</div>
+                </div>
+              </div>
+              <div id="tabs-4">
+                <div class="skills__cards">
+                  <div class="skills__card">Git</div>
+                  <div class="skills__card">GitHub</div>
+                  <div class="skills__card">GitLab</div>
+                  <div class="skills__card">JSON</div>
+                  <div class="skills__card">Responsive Design</div>
+                  <div class="skills__card">Browser Developer Tools</div>
+                </div>
+              </div>
+              <div id="tabs-5">
+                <div class="skills__cards">
+                  <div class="skills__card">Excellent communication</div>
+                  <div class="skills__card">Problem-solving</div>
+                  <div class="skills__card">Time management</div>
+                  <div class="skills__card">Proactive & Diligent</div>
+                </div>
+              </div>
             </div>
-            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio" id="projects">
+        <div class="portfolio__inner">
+          <div class="container">
+            <div class="portfolio__title">Projects</div>
+            <div class="portfolio__cards">
+              <div
+                class="portfolio__card"
+                data-aos="fade-right"
+                data-aos-offset="100"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="500"
+              >
+                <a href="https://news-flash-phi.vercel.app/" target="_blank">
+                  <img
+                    class="portfolio__card-img"
+                    src="./assets/img/prj1.png"
+                    alt="project image"
+                  />
+                  <img
+                    class="portfolio__card-link"
+                    src="./assets/img/external-link.png"
+                    alt="external-link"
+                  />
+                </a>
+              </div>
+
+              <div
+                class="portfolio__card"
+                class="portfolio__card"
+                data-aos="fade-left"
+                data-aos-offset="100"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="500"
+              >
+                <a href="http://masterhub.co/" target="_blank">
+                  <img
+                    class="portfolio__card-img"
+                    src="./assets/img/prj2.png"
+                    alt="project image"
+                  />
+                  <img
+                    class="portfolio__card-link"
+                    src="./assets/img/external-link.png"
+                    alt="external-link"
+                  />
+                </a>
+              </div>
+
+              <div
+                class="portfolio__card"
+                data-aos="fade-right"
+                data-aos-offset="100"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="500"
+              >
+                <a href="http://spotify-project1.vercel.app/" target="_blank">
+                  <img
+                    class="portfolio__card-img"
+                    src="./assets/img/prj3.png"
+                    alt="project image"
+                  />
+                  <img
+                    class="portfolio__card-link"
+                    src="./assets/img/external-link.png"
+                    alt="external-link"
+                  />
+                </a>
+              </div>
+              <div
+                class="portfolio__card"
+                data-aos="fade-left"
+                data-aos-offset="100"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="500"
+              >
+                <a
+                  href="https://mnosov622.github.io/cutspace-project/"
+                  target="_blank"
+                >
+                  <img
+                    class="portfolio__card-img"
+                    src="./assets/img/prj4.png"
+                    alt="project image"
+                  />
+                  <img
+                    class="portfolio__card-link"
+                    src="./assets/img/external-link.png"
+                    alt="external-link"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="certifications">
+                Certification
+            </section> -->
     </main>
 
     <footer class="footer">
-        <div class="container-sm">
-            <div class="footer__inner">
-                <div class="footer__logo logo">
-                    MN
-                </div>
+      <div class="container-sm">
+        <div class="footer__inner">
+          <div class="footer__logo logo">MN</div>
 
-                <p class="footer__title">Let’s Talk with Me!</p>
-                <p class="footer__descr"> I am always open to discuss your projects, improve
-                    UI and provide excellent software solutions to result in graceful UX. </p>
+          <p
+            class="footer__title"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            data-aos-offset="50"
+          >
+            Let’s Talk with Me!
+          </p>
+          <p class="footer__descr">
+            I am always open to discuss your projects, improve UI and provide
+            excellent software solutions to result in graceful UX.
+          </p>
 
-                <div class="footer__socials" id="socials">
-                    <a href="https://www.linkedin.com/in/maxim-nosov-828894220/" target="_blank">
-                        <svg class="footer__socials-item" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="45" height="45" rx="22.5" fill="white" fill-opacity="0.5"/>
-                            <path  d="M16.459 31.875H11.9238V17.2705H16.459V31.875ZM14.189 15.2783C12.7388 15.2783 11.5625 14.0771 11.5625 12.627C11.5625 11.9304 11.8392 11.2623 12.3318 10.7698C12.8243 10.2772 13.4924 10.0005 14.189 10.0005C14.8855 10.0005 15.5536 10.2772 16.0462 10.7698C16.5387 11.2623 16.8154 11.9304 16.8154 12.627C16.8154 14.0771 15.6387 15.2783 14.189 15.2783ZM33.4326 31.875H28.9072V24.7656C28.9072 23.0713 28.873 20.8984 26.5493 20.8984C24.1914 20.8984 23.8301 22.7393 23.8301 24.6436V31.875H19.2998V17.2705H23.6494V19.2627H23.7129C24.3184 18.1152 25.7974 16.9043 28.0039 16.9043C32.5938 16.9043 33.4375 19.9268 33.4375 23.8525V31.875H33.4326Z" fill="white"/>
-                            </svg>
-                    </a>
-                    <a href="https://github.com/mnosov622" target="_blank">
-                        <svg class="footer__socials-item" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="45" height="45" rx="22.5" fill="white" fill-opacity="0.5"/>
-                            <path class="github" d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z" fill="white"/>
-                            </svg>
-                        </a>
-                        
-                        <a href="mailto:mnosov622@gmail.com">
-                            <svg  class="footer__socials-item" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="45" height="45" rx="22.5" fill="white" fill-opacity="0.5"/>
-                                <g clip-path="url(#clip0_1_276)">
-                                    <path d="M16.9444 30.8331C15.8333 30.8331 14.7222 29.8609 14.1667 29.4442C11.3889 27.4998 10.5556 26.8053 10 26.3887V32.222C10 32.9889 10.622 33.6109 11.3889 33.6109H22.5C23.2669 33.6109 23.8889 32.9889 23.8889 32.222V26.3887C23.3333 26.8053 22.5 27.4998 19.7222 29.4442C19.1667 29.8609 18.0556 30.8331 16.9444 30.8331ZM22.5 22.4998H11.3889C10.622 22.4998 10 23.1217 10 23.8887V24.5831C11.1111 25.4164 10.9722 25.4164 15 28.3331C15.4167 28.6109 16.25 29.4442 16.9444 29.4442C17.6389 29.4442 18.4722 28.6109 18.8889 28.472C22.9167 25.5553 22.7778 25.5553 23.8889 24.722V23.8887C23.8889 23.1217 23.2669 22.4998 22.5 22.4998ZM33.6111 18.3331H19.7222C18.9553 18.3331 18.3333 18.9551 18.3333 19.722V21.1109H22.5C23.9414 21.1109 25.1298 22.2142 25.2652 23.6204L25.2778 23.6109V29.4442H33.6111C34.378 29.4442 35 28.8223 35 28.0553V19.722C35 18.9551 34.378 18.3331 33.6111 18.3331ZM32.2222 23.8887H29.4444V21.1109H32.2222V23.8887ZM16.9444 19.722C16.9444 18.1903 18.1905 16.9442 19.7222 16.9442H29.4444V12.7776C29.4444 12.0106 28.8225 11.3887 28.0556 11.3887H14.1667C13.3997 11.3887 12.7778 12.0106 12.7778 12.7776V21.1109H16.9444V19.722Z" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_1_276">
-                                        <rect width="25" height="25" fill="white" transform="translate(10 10)"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                        </a>
+          <div class="footer__socials" id="socials">
+            <a
+              href="https://www.linkedin.com/in/maxim-nosov-828894220/"
+              target="_blank"
+            >
+              <svg
+                class="footer__socials-item"
+                width="45"
+                height="45"
+                viewBox="0 0 45 45"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  width="45"
+                  height="45"
+                  rx="22.5"
+                  fill="white"
+                  fill-opacity="0.5"
+                />
+                <path
+                  d="M16.459 31.875H11.9238V17.2705H16.459V31.875ZM14.189 15.2783C12.7388 15.2783 11.5625 14.0771 11.5625 12.627C11.5625 11.9304 11.8392 11.2623 12.3318 10.7698C12.8243 10.2772 13.4924 10.0005 14.189 10.0005C14.8855 10.0005 15.5536 10.2772 16.0462 10.7698C16.5387 11.2623 16.8154 11.9304 16.8154 12.627C16.8154 14.0771 15.6387 15.2783 14.189 15.2783ZM33.4326 31.875H28.9072V24.7656C28.9072 23.0713 28.873 20.8984 26.5493 20.8984C24.1914 20.8984 23.8301 22.7393 23.8301 24.6436V31.875H19.2998V17.2705H23.6494V19.2627H23.7129C24.3184 18.1152 25.7974 16.9043 28.0039 16.9043C32.5938 16.9043 33.4375 19.9268 33.4375 23.8525V31.875H33.4326Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            <a href="https://github.com/mnosov622" target="_blank">
+              <svg
+                class="footer__socials-item"
+                width="45"
+                height="45"
+                viewBox="0 0 45 45"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  width="45"
+                  height="45"
+                  rx="22.5"
+                  fill="white"
+                  fill-opacity="0.5"
+                />
+                <path
+                  class="github"
+                  d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z"
+                  fill="white"
+                />
+              </svg>
+            </a>
 
-                            <a href="https://www.instagram.com/max_n87/" target="_blank">
-                                <svg class="footer__socials-item" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="45" height="45" rx="22.5" fill="white" fill-opacity="0.5"/>
-                                    <path class="instagram" d="M12 7C11.0111 7 10.0444 7.29324 9.22215 7.84265C8.3999 8.39206 7.75904 9.17295 7.3806 10.0866C7.00216 11.0002 6.90315 12.0055 7.09607 12.9755C7.289 13.9454 7.7652 14.8363 8.46447 15.5355C9.16373 16.2348 10.0546 16.711 11.0245 16.9039C11.9945 17.0969 12.9998 16.9978 13.9134 16.6194C14.827 16.241 15.6079 15.6001 16.1573 14.7779C16.7068 13.9556 17 12.9889 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7ZM12 15C11.4067 15 10.8266 14.8241 10.3333 14.4944C9.83994 14.1648 9.45542 13.6962 9.22836 13.1481C9.0013 12.5999 8.94189 11.9967 9.05764 11.4147C9.1734 10.8328 9.45912 10.2982 9.87868 9.87868C10.2982 9.45912 10.8328 9.1734 11.4147 9.05764C11.9967 8.94189 12.5999 9.0013 13.1481 9.22836C13.6962 9.45542 14.1648 9.83994 14.4944 10.3333C14.8241 10.8266 15 11.4067 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15ZM17 6C16.8022 6 16.6089 6.05865 16.4444 6.16853C16.28 6.27841 16.1518 6.43459 16.0761 6.61732C16.0004 6.80004 15.9806 7.00111 16.0192 7.19509C16.0578 7.38907 16.153 7.56725 16.2929 7.70711C16.4327 7.84696 16.6109 7.9422 16.8049 7.98079C16.9989 8.01937 17.2 7.99957 17.3827 7.92388C17.5654 7.84819 17.7216 7.72002 17.8315 7.55557C17.9414 7.39112 18 7.19778 18 7C18 6.73478 17.8946 6.48043 17.7071 6.29289C17.5196 6.10536 17.2652 6 17 6ZM21.94 8.24C21.9234 7.38542 21.7611 6.53995 21.46 5.74C21.1808 5.01207 20.7516 4.35099 20.2003 3.7997C19.649 3.2484 18.9879 2.81922 18.26 2.54C17.4601 2.2389 16.6146 2.07657 15.76 2.06C14.79 2 14.47 2 12 2C9.53 2 9.21 2 8.24 2.06C7.38542 2.07657 6.53995 2.2389 5.74 2.54C5.01207 2.81922 4.35099 3.2484 3.7997 3.7997C3.2484 4.35099 2.81922 5.01207 2.54 5.74C2.2389 6.53995 2.07657 7.38542 2.06 8.24C2 9.22 2 9.54 2 12C2 14.46 2 14.78 2.06 15.76C2.07657 16.6146 2.2389 17.4601 2.54 18.26C2.81922 18.9879 3.2484 19.649 3.7997 20.2003C4.35099 20.7516 5.01207 21.1808 5.74 21.46C6.53995 21.7611 7.38542 21.9234 8.24 21.94C9.24 21.94 9.53 22 12 22C14.47 22 14.79 22 15.76 21.94C16.6146 21.9234 17.4601 21.7611 18.26 21.46C18.9879 21.1808 19.649 20.7516 20.2003 20.2003C20.7516 19.649 21.1808 18.9879 21.46 18.26C21.7611 17.4601 21.9234 16.6146 21.94 15.76C21.94 14.76 22 14.46 22 12C22 9.54 22 9.22 21.94 8.24ZM19.94 15.67C19.9225 16.3046 19.8043 16.9324 19.59 17.53C19.4128 18.0023 19.1327 18.4293 18.77 18.78C18.4214 19.1428 17.9936 19.4201 17.52 19.59C16.921 19.8131 16.289 19.9348 15.65 19.95C14.71 19.95 14.42 20 11.99 20C9.56 20 9.28 20 8.34 20C7.70202 19.9835 7.07075 19.8654 6.47 19.65C5.99766 19.4728 5.57067 19.1927 5.22 18.83C4.85715 18.4814 4.57992 18.0536 4.41 17.58C4.1878 16.9842 4.06615 16.3557 4.05 15.72C4.05 14.72 4.05 14.47 4.05 12.05C4.05 9.63 4.05 9.34 4.05 8.38C4.06724 7.74121 4.18884 7.10954 4.41 6.51C4.58256 6.04063 4.85953 5.61662 5.22 5.27C5.56858 4.90715 5.99641 4.62992 6.47 4.46C7.06899 4.2369 7.70099 4.11523 8.34 4.1C9.28 4 9.57 4 12 4C14.43 4 14.72 4 15.66 4C16.3021 4.01633 16.9373 4.13794 17.54 4.36C18.0094 4.53256 18.4334 4.80953 18.78 5.17C19.1428 5.51858 19.4201 5.94641 19.59 6.42C19.8348 7.02856 19.9735 7.67458 20 8.33C20 9.33 20.05 9.58 20.05 12C20.05 14.42 20 14.71 20 15.67H19.94Z" fill="white"/>
-                                    </svg>
-                                </a>
-                            
-                </div>
-                <div class="footer__copyright">
-                    <p class="footer__copyright-text">© 2022  -  Maxim Nosov | Front end developer</p>
-                </div>
-            </div>
+            <a href="mailto:mnosov622@gmail.com">
+              <svg
+                class="footer__socials-item"
+                width="45"
+                height="45"
+                viewBox="0 0 45 45"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  width="45"
+                  height="45"
+                  rx="22.5"
+                  fill="white"
+                  fill-opacity="0.5"
+                />
+                <g clip-path="url(#clip0_1_276)">
+                  <path
+                    d="M16.9444 30.8331C15.8333 30.8331 14.7222 29.8609 14.1667 29.4442C11.3889 27.4998 10.5556 26.8053 10 26.3887V32.222C10 32.9889 10.622 33.6109 11.3889 33.6109H22.5C23.2669 33.6109 23.8889 32.9889 23.8889 32.222V26.3887C23.3333 26.8053 22.5 27.4998 19.7222 29.4442C19.1667 29.8609 18.0556 30.8331 16.9444 30.8331ZM22.5 22.4998H11.3889C10.622 22.4998 10 23.1217 10 23.8887V24.5831C11.1111 25.4164 10.9722 25.4164 15 28.3331C15.4167 28.6109 16.25 29.4442 16.9444 29.4442C17.6389 29.4442 18.4722 28.6109 18.8889 28.472C22.9167 25.5553 22.7778 25.5553 23.8889 24.722V23.8887C23.8889 23.1217 23.2669 22.4998 22.5 22.4998ZM33.6111 18.3331H19.7222C18.9553 18.3331 18.3333 18.9551 18.3333 19.722V21.1109H22.5C23.9414 21.1109 25.1298 22.2142 25.2652 23.6204L25.2778 23.6109V29.4442H33.6111C34.378 29.4442 35 28.8223 35 28.0553V19.722C35 18.9551 34.378 18.3331 33.6111 18.3331ZM32.2222 23.8887H29.4444V21.1109H32.2222V23.8887ZM16.9444 19.722C16.9444 18.1903 18.1905 16.9442 19.7222 16.9442H29.4444V12.7776C29.4444 12.0106 28.8225 11.3887 28.0556 11.3887H14.1667C13.3997 11.3887 12.7778 12.0106 12.7778 12.7776V21.1109H16.9444V19.722Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_276">
+                    <rect
+                      width="25"
+                      height="25"
+                      fill="white"
+                      transform="translate(10 10)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+
+            <a href="https://www.instagram.com/max_n87/" target="_blank">
+              <svg
+                class="footer__socials-item"
+                width="45"
+                height="45"
+                viewBox="0 0 45 45"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  width="45"
+                  height="45"
+                  rx="22.5"
+                  fill="white"
+                  fill-opacity="0.5"
+                />
+                <path
+                  class="instagram"
+                  d="M12 7C11.0111 7 10.0444 7.29324 9.22215 7.84265C8.3999 8.39206 7.75904 9.17295 7.3806 10.0866C7.00216 11.0002 6.90315 12.0055 7.09607 12.9755C7.289 13.9454 7.7652 14.8363 8.46447 15.5355C9.16373 16.2348 10.0546 16.711 11.0245 16.9039C11.9945 17.0969 12.9998 16.9978 13.9134 16.6194C14.827 16.241 15.6079 15.6001 16.1573 14.7779C16.7068 13.9556 17 12.9889 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7ZM12 15C11.4067 15 10.8266 14.8241 10.3333 14.4944C9.83994 14.1648 9.45542 13.6962 9.22836 13.1481C9.0013 12.5999 8.94189 11.9967 9.05764 11.4147C9.1734 10.8328 9.45912 10.2982 9.87868 9.87868C10.2982 9.45912 10.8328 9.1734 11.4147 9.05764C11.9967 8.94189 12.5999 9.0013 13.1481 9.22836C13.6962 9.45542 14.1648 9.83994 14.4944 10.3333C14.8241 10.8266 15 11.4067 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15ZM17 6C16.8022 6 16.6089 6.05865 16.4444 6.16853C16.28 6.27841 16.1518 6.43459 16.0761 6.61732C16.0004 6.80004 15.9806 7.00111 16.0192 7.19509C16.0578 7.38907 16.153 7.56725 16.2929 7.70711C16.4327 7.84696 16.6109 7.9422 16.8049 7.98079C16.9989 8.01937 17.2 7.99957 17.3827 7.92388C17.5654 7.84819 17.7216 7.72002 17.8315 7.55557C17.9414 7.39112 18 7.19778 18 7C18 6.73478 17.8946 6.48043 17.7071 6.29289C17.5196 6.10536 17.2652 6 17 6ZM21.94 8.24C21.9234 7.38542 21.7611 6.53995 21.46 5.74C21.1808 5.01207 20.7516 4.35099 20.2003 3.7997C19.649 3.2484 18.9879 2.81922 18.26 2.54C17.4601 2.2389 16.6146 2.07657 15.76 2.06C14.79 2 14.47 2 12 2C9.53 2 9.21 2 8.24 2.06C7.38542 2.07657 6.53995 2.2389 5.74 2.54C5.01207 2.81922 4.35099 3.2484 3.7997 3.7997C3.2484 4.35099 2.81922 5.01207 2.54 5.74C2.2389 6.53995 2.07657 7.38542 2.06 8.24C2 9.22 2 9.54 2 12C2 14.46 2 14.78 2.06 15.76C2.07657 16.6146 2.2389 17.4601 2.54 18.26C2.81922 18.9879 3.2484 19.649 3.7997 20.2003C4.35099 20.7516 5.01207 21.1808 5.74 21.46C6.53995 21.7611 7.38542 21.9234 8.24 21.94C9.24 21.94 9.53 22 12 22C14.47 22 14.79 22 15.76 21.94C16.6146 21.9234 17.4601 21.7611 18.26 21.46C18.9879 21.1808 19.649 20.7516 20.2003 20.2003C20.7516 19.649 21.1808 18.9879 21.46 18.26C21.7611 17.4601 21.9234 16.6146 21.94 15.76C21.94 14.76 22 14.46 22 12C22 9.54 22 9.22 21.94 8.24ZM19.94 15.67C19.9225 16.3046 19.8043 16.9324 19.59 17.53C19.4128 18.0023 19.1327 18.4293 18.77 18.78C18.4214 19.1428 17.9936 19.4201 17.52 19.59C16.921 19.8131 16.289 19.9348 15.65 19.95C14.71 19.95 14.42 20 11.99 20C9.56 20 9.28 20 8.34 20C7.70202 19.9835 7.07075 19.8654 6.47 19.65C5.99766 19.4728 5.57067 19.1927 5.22 18.83C4.85715 18.4814 4.57992 18.0536 4.41 17.58C4.1878 16.9842 4.06615 16.3557 4.05 15.72C4.05 14.72 4.05 14.47 4.05 12.05C4.05 9.63 4.05 9.34 4.05 8.38C4.06724 7.74121 4.18884 7.10954 4.41 6.51C4.58256 6.04063 4.85953 5.61662 5.22 5.27C5.56858 4.90715 5.99641 4.62992 6.47 4.46C7.06899 4.2369 7.70099 4.11523 8.34 4.1C9.28 4 9.57 4 12 4C14.43 4 14.72 4 15.66 4C16.3021 4.01633 16.9373 4.13794 17.54 4.36C18.0094 4.53256 18.4334 4.80953 18.78 5.17C19.1428 5.51858 19.4201 5.94641 19.59 6.42C19.8348 7.02856 19.9735 7.67458 20 8.33C20 9.33 20.05 9.58 20.05 12C20.05 14.42 20 14.71 20 15.67H19.94Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="footer__copyright">
+            <p class="footer__copyright-text">
+              © 2022 - Maxim Nosov | Front end developer
+            </p>
+          </div>
         </div>
+      </div>
     </footer>
 
-</body>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="./assets/js/tabs.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
 </html>

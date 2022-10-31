@@ -32,14 +32,15 @@ html {
 
 body {
   background: #020024;
-  background: linear-gradient(113.49deg, #984D38 -30.3%, #181E41 58.12%);
+  background: linear-gradient(113.49deg, #984d38 -30.3%, #181e41 58.12%);
   font-family: "Poppins";
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
-  color: #FFFFFF;
+  color: #ffffff;
+  overflow-x: hidden;
 }
 
 img {
@@ -69,6 +70,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__author {
@@ -83,7 +87,7 @@ img {
 .logo {
   width: 40px;
   height: 40px;
-  background: linear-gradient(214.02deg, #EA5F5F 6.04%, #EEAA55 92.95%);
+  background: linear-gradient(214.02deg, #ea5f5f 6.04%, #eeaa55 92.95%);
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -119,39 +123,39 @@ img {
 }
 
 .header__menu-item::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 2px;
   width: 10px;
   height: 2px;
-  background-color: #EEAA55;
+  background-color: #eeaa55;
   visibility: hidden;
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .header__menu-item::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   right: 2px;
   width: 10px;
   height: 2px;
-  background-color: #EEAA55;
+  background-color: #eeaa55;
   visibility: hidden;
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .header__menu-item:hover::before {
-  color: #EEAA55;
+  color: #eeaa55;
   visibility: visible;
   width: 50%;
 }
 
 .header__menu-item:hover::after {
-  color: #EEAA55;
+  color: #eeaa55;
   visibility: visible;
   width: 50%;
 }
@@ -173,16 +177,26 @@ img {
   padding: 10px 20px;
   width: 122px;
   height: 50px;
-  background: linear-gradient(214.02deg, #EA5F5F 6.04%, #EEAA55 92.95%);
+  background: linear-gradient(214.02deg, #ea5f5f 6.04%, #eeaa55 92.95%);
   border-radius: 50px;
   cursor: pointer;
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .header__contact-btn:hover {
   -webkit-box-shadow: 0 0px 15px 0 rgba(252, 104, 110, 0.65);
           box-shadow: 0 0px 15px 0 rgba(252, 104, 110, 0.65);
+}
+
+.header__burger-icon {
+  cursor: pointer;
+  display: none;
+  margin-left: 20px;
+}
+
+.burger-icon {
+  vertical-align: middle;
 }
 
 .header__contacts {
@@ -199,8 +213,8 @@ img {
       -ms-flex-align: center;
           align-items: center;
   visibility: hidden;
-  -webkit-transition: all .3s ease-in;
-  transition: all .3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .header__contacts-content {
@@ -208,8 +222,8 @@ img {
   top: -50px;
   width: 30%;
   height: 30%;
-  background-color: #FFFFFF;
-  color: #181E41;
+  background-color: #ffffff;
+  color: #181e41;
   padding: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -225,8 +239,8 @@ img {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 20px;
-  -webkit-transition: all .3s ease-in;
-  transition: all .3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .close-icon {
@@ -236,8 +250,8 @@ img {
   top: 20px;
   width: 20px;
   height: 20px;
-  -webkit-transition: all .3s ease-in;
-  transition: all .3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .close-icon:hover {
@@ -269,7 +283,7 @@ img {
 }
 
 .header__contact-me {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 20px;
   cursor: pointer;
 }
@@ -287,7 +301,6 @@ img {
 
 .main__about-intro {
   max-width: 1220px;
-  height: 360px;
   font-weight: 700;
   font-size: 100px;
   line-height: 120%;
@@ -316,7 +329,7 @@ img {
   padding: 10px 20px;
   width: 182px;
   height: 50px;
-  background: linear-gradient(214.02deg, #EA5F5F 6.04%, #EEAA55 92.95%);
+  background: linear-gradient(214.02deg, #ea5f5f 6.04%, #eeaa55 92.95%);
   border-radius: 50px;
   cursor: pointer;
   color: #fff;
@@ -333,7 +346,7 @@ img {
   height: -50px;
   right: 10px;
   top: 450px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -370,17 +383,17 @@ img {
 }
 
 .main__about-connect-text {
-  background: linear-gradient(214.02deg, #EA5F5F 6.04%, #EEAA55 92.95%);
+  background: linear-gradient(214.02deg, #ea5f5f 6.04%, #eeaa55 92.95%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
 
 .main__about-connect-arrow {
   margin-left: 10px;
-  -webkit-transition: -webkit-transform .3s ease-in;
-  transition: -webkit-transform .3s ease-in;
-  transition: transform .3s ease-in;
-  transition: transform .3s ease-in, -webkit-transform .3s ease-in;
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
 }
 
 .author_resume {
@@ -389,6 +402,26 @@ img {
   left: 0;
   width: 500px;
   height: 500px;
+}
+
+.mouse-icon {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.mouse-icon::after {
+  content: "";
+  background: url("../img/icons/mouse-roll.svg") center no-repeat;
+  width: 2px;
+  height: 4px;
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .skills__inner {
@@ -417,7 +450,7 @@ img {
   cursor: pointer;
   padding: 30px;
   height: 60px;
-  background: linear-gradient(214.02deg, #EA5F5F 6.04%, #EEAA55 92.95%);
+  background: linear-gradient(214.02deg, #ea5f5f 6.04%, #eeaa55 92.95%);
   -webkit-box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
@@ -431,8 +464,8 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   font-family: "Poppins";
-  -webkit-transition: all .3s ease-in;
-  transition: all .3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .skills__card:hover {
@@ -449,12 +482,16 @@ img {
 }
 
 #tabs li.active {
-  background: linear-gradient(214.02deg, #EA5F5F 6.04%, #EEAA55 92.95%);
+  background: linear-gradient(214.02deg, #ea5f5f 6.04%, #eeaa55 92.95%);
   -webkit-box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
 }
 
-#tabs-1, #tabs-2, #tabs-3, #tabs-4, #tabs-5 {
+#tabs-1,
+#tabs-2,
+#tabs-3,
+#tabs-4,
+#tabs-5 {
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -498,8 +535,8 @@ img {
   color: #fff;
   font-family: "Poppins";
   border: none;
-  -webkit-transition: all .15s ease-in;
-  transition: all .15s ease-in;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
 }
 
 .ui-tabs .ui-tabs-nav {
@@ -534,10 +571,10 @@ img {
 .portfolio__card {
   width: 40%;
   border-radius: 30px;
-  -webkit-transition: -webkit-filter .2s ease-in;
-  transition: -webkit-filter .2s ease-in;
-  transition: filter .2s ease-in;
-  transition: filter .2s ease-in, -webkit-filter .2s ease-in;
+  -webkit-transition: -webkit-filter 0.2s ease-in;
+  transition: -webkit-filter 0.2s ease-in;
+  transition: filter 0.2s ease-in;
+  transition: filter 0.2s ease-in, -webkit-filter 0.2s ease-in;
   cursor: pointer;
   margin-bottom: 20px;
 }
@@ -575,12 +612,13 @@ img {
   left: 45%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  -webkit-transition: all .3s ease-in;
-  transition: all .3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .footer__inner {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .footer__logo {
@@ -589,7 +627,7 @@ img {
 
 .footer__title {
   margin: 20px 0;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 50px;
@@ -598,7 +636,7 @@ img {
 }
 
 .footer__descr {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -638,7 +676,7 @@ img {
 
 .footer__copyright {
   margin-top: 50px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -646,5 +684,107 @@ img {
   text-align: center;
   letter-spacing: 0.3px;
   color: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 1144px) {
+  .main__about-intro {
+    font-size: 75px;
+  }
+  .main__about-picture {
+    width: 80%;
+  }
+  .main__about-connect {
+    margin-top: -150px;
+  }
+}
+
+@media screen and (max-width: 1054px) {
+  .ui-tabs-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .ui-tabs {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .tabs__item {
+    margin: 0 auto;
+  }
+  .skills__cards * {
+    margin-left: 0;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .main__about-intro {
+    font-size: 60px;
+  }
+  .main__about-text {
+    font-size: 18px;
+  }
+  .main__about-picture {
+    width: 70%;
+    margin-left: 50px;
+  }
+  .main__about-connect {
+    margin-top: -220px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .main__about-intro {
+    font-size: 55px;
+  }
+  .main__about-text {
+    font-size: 16px;
+  }
+  .main__about-connect {
+    margin-top: -180px;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__burger-icon {
+    display: block;
+  }
+  .header__contact-btn {
+    margin: 0 auto;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 774px) {
+  .main__about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main__about-picture {
+    margin-bottom: 200px;
+    margin-top: 50px;
+  }
+  .main__about-section {
+    margin: 0 auto;
+  }
+  .main__about-connect {
+    display: none;
+  }
+  .skills {
+    margin-top: 350px;
+  }
+  .ui-tabs-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main__about-image {
+    margin: 0 auto !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
